@@ -20,29 +20,29 @@ This C program simulates an airport control tower managing flight landings. It p
 
 ## File Structure
 
--   `Lab1_Ian_Patrick_da_Costa_Soares.CPP`: Main source code
--   `data/entrada1.txt`: Input file with flight commands
--   `output/saida1.txt`: Output file for landing authorizations and queue status
+-   `control_tower.cpp`: Main source code
+-   `entrada1.txt`: Input file with flight commands
+-   `saida1.txt`: Output file for landing authorizations and queue status
 
 ## Usage
 
 1. Compile the program:
 
     ```
-    g++ Lab1_Ian_Patrick_da_Costa_Soares.CPP -o airport_simulator
+    g++ control_tower.cpp -o control_tower
     ```
 
 2. Run the executable:
 
     ```
-    ./airport_simulator
+    ./control_tower
     ```
 
-3. Check the output in `output/saida1.txt`
+3. Check the output in `saida1.txt`
 
 ## Input File Format
 
-The input file (`data/entrada1.txt`) should contain the following commands:
+The input file (`entrada1.txt`) should contain the following commands:
 
 -   `INICIO`: Marks the beginning of commands
 -   `pede_pouso [FLIGHT] [ORIGIN]`: Request landing for a flight
@@ -78,7 +78,7 @@ FIM                 0000  -
 
 ## Output Format
 
-The output file (`output/saida1.txt`) contains:
+The output file (`saida1.txt`) contains:
 
 1. Header information
 2. Landing authorizations as they occur
@@ -122,8 +122,7 @@ The program includes basic error handling for file operations and memory allocat
 ## Author
 
 Ian Patrick da Costa Soares
-Turma 28.1
 
 ## License
 
-[Specify your license here, if applicable]
+This project is licensed under the [MIT License](LICENSE).
